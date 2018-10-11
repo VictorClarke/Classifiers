@@ -19,8 +19,6 @@ train_fileids = movie_reviews.fileids()[:500] + movie_reviews.fileids()[1000:150
 test_fileids = movie_reviews.fileids()[500:1000] + movie_reviews.fileids()[1500:2000]
 
 # Collect all the words from the training examples
-# Have vocabulary be a set rather than a list because we don't have duplicate word in words,
-# and if you add a duplicate to a set it doesnt add it
 vocabulary = set()
 # For each training file and for each word in the file
 for fileid in train_fileids:
